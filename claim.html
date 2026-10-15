@@ -18,6 +18,8 @@
 <div class="promo" style="grid-template-columns:1fr;margin-top:30px"><div class="pic"><img src="images/claim-form.webp" alt=""></div></div></div><div class="rv rr"><div class="form-card"><h3>Let us know about you</h3><p class="sub">Answer a few quick questions to check your eligibility. If eligible, you'll be connected with a personal injury attorney, often with no upfront fees.</p>
 <div class="prog"><span class="on"></span><span></span><span></span></div>
 <form data-steps>
+<input type="hidden" name="xxTrustedFormCertUrl" id="xxTrustedFormCertUrl_0" value="">
+<input type="hidden" name="xxTrustedFormPingUrl" id="xxTrustedFormPingUrl_0" value="">
 <fieldset class="stp on"><legend>Step 1: Your Details</legend>
 <div class="f2"><div><label class="l">First Name</label><input required autocomplete="given-name"></div><div><label class="l">Last Name</label><input required autocomplete="family-name"></div></div>
 <div class="f2"><div><label class="l">Email</label><input type="email" required autocomplete="email"></div><div><label class="l">Zipcode</label><input required inputmode="numeric" autocomplete="postal-code"></div></div></fieldset>
@@ -42,4 +44,17 @@
 <button class="fab" aria-label="Help">?</button>
 <div class="stickybar"><a href="tel:+18442282372"><svg class="i " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Call us</a><a href="mailto:info@roadtrafficinjury.com"><svg class="i " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Email us</a><a href="claim.html"><svg class="i " viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg>Claim form</a></div>
 <button class="topbtn" aria-label="Back to top"><svg class="i " viewBox="0 0 24 24" aria-hidden="true"><path d="M6 14l6-6 6 6"/></svg></button>
-<script src="assets/main.js"></script></body></html>
+<script src="assets/main.js"></script>
+<script type="text/javascript">
+(function() {
+  var tf = document.createElement('script');
+  tf.type = 'text/javascript';
+  tf.async = true;
+  tf.src = ('https:' === document.location.protocol ? 'https:' : 'http:') +
+    '//api.trustedform.com/trustedform.js?field=xxTrustedFormCertUrl&ping_field=xxTrustedFormPingUrl&l=' +
+    new Date().getTime() + Math.random();
+  var s = document.getElementsByTagName('script')[0];
+  if (s && s.parentNode) s.parentNode.insertBefore(tf, s);
+})();
+</script>
+</body></html>
